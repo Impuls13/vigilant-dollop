@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навигатор по торговому центру</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Дизайн завод</h1>
+            <p>Выберите начальную и конечную точки для построения маршрута</p>
+        </header>
+        
+        <main>
+            <div class="controls">
+                <div class="form-group">
+                    <label for="start-point">Начальная точка:</label>
+                    <select id="start-point">
+                        <option value="">Выберите начальную точку</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="end-point">Конечная точка:</label>
+                    <select id="end-point">
+                        <option value="">Выберите конечную точку</option>
+                    </select>
+                </div>
+                
+                <button id="find-route" class="btn">Найти путь</button>
+                <button id="clear-route" class="btn btn-secondary">Очистить</button>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <img id="mall-map" src="/static/images/mall-map.jpg" alt="Карта торгового центра">
+                    <canvas id="path-canvas"></canvas>
+                </div>
+                
+                <div class="route-info">
+                    <h3>Информация о маршруте</h3>
+                    <div id="route-details">
+                        <p>Выберите начальную и конечную точки для построения маршрута.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>*** ***</p>
+        </footer>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

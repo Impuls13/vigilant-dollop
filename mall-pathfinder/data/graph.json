@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "entrance": {"x": 164, "y": 1423, "visible": true},
+    "build_2": {"x": 588, "y":1819, "visible": true},
+    "streat_1": {"x": 404, "y": 1451, "visible": false},
+    "streat_2": {"x": 400, "y": 1799, "visible": false},
+    "build_12": {"x": 1128, "y": 2323, "visible": true},
+    "streat_3": {"x": 380, "y": 2083, "visible": false},
+    "streat_4": {"x": 1014, "y": 2115, "visible": false},
+    "streat_5": {"x": 1040, "y": 2291, "visible": false}
+  
+  },
+  "edges": {
+    "entrance": ["streat_1"],
+    "streat_1": ["entrance", "streat_2"],
+    "streat_2": ["streat_1", "build_2", "streat_3"],
+    "build_2": ["streat_2"],
+    "streat_3": ["streat_2", "streat_4"],
+    "streat_4": ["streat_3", "streat_5"],
+    "streat_5": ["streat_4", "build_12"],
+    "build_12": ["streat_5"],
+
+
+
+
+    "B": ["A", "C", "E", "F", "G"],
+    "C": ["B", "D", "E", "F", "I"],
+    "D": ["A", "C", "E", "J"],
+    "E": ["A", "B", "C", "D", "F"],
+    "F": ["B", "C", "E", "G", "H", "I"],
+    "G": ["B", "F", "H"],
+    "H": ["F", "G", "I"],
+    "I": ["C", "F", "H", "J"],
+    "J": ["D", "I"]
+  }
+}
